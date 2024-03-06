@@ -1,0 +1,31 @@
+body {
+    /* width: max-content; */
+    /* height: max-content; */
+    /* background-color: aqua; */
+    /* border: solid red 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerimgs {
+    display: flex;
+}
+
+.imgs {
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 300px;
+    margin: 30px;
+    border: solid 1px gray;
+}
+
+input {
+    width: 300px;
+}

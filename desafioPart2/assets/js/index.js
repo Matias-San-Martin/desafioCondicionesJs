@@ -1,0 +1,2 @@
+parraforef = document.querySelector('#parmuestra')
+

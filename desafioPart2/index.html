@@ -6,13 +6,44 @@
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script defer src="./assets/js/index.js"></script>
-    <title>Document</title>
+    <title>Parte2</title>
 </head>
 <body>
-    
+    <div>
+        <h3>PUEDES LLEVAR HASTA 10 STICKERS EN TOTAL</h3>
+    </div>
+    <div class="containerimgs">
+        <div class="imgs">    
+            <img src="./assets/img/shoeone.avif" alt="">
+            <input id="shoe1" type="text">
+        </div>
+        <div class="imgs">
+            <img src="./assets/img/shoetwo.avif" alt="">
+            <input id="shoe2" type="text">
+        </div>
+        <div class="imgs">
+            <img src="./assets/img/shoethree.avif" alt="">
+            <input id="shoe3" type="text">
+        </div>    
+    </div>
+    <div>
+        <p id="parmuestra"></p>
+        <button
+        onclick="
+        const articulo1 = parseInt(document.querySelector ('#shoe1').value);
+        const articulo2 = parseInt(document.querySelector ('#shoe2').value);
+        const articulo3 = parseInt(document.querySelector ('#shoe3').value);
+        const sumaArticulos = articulo1 + articulo2 + articulo3;
+        if(sumaArticulos <= 10) {
+            parraforef.innerHTML = 'Llevas '+ sumaArticulos + ' articulos'
+        }
+        else {
+            parraforef.innerHTML = 'Llevas demasiados articulos'
+        }
+        "
 
-    <img src="" alt="">
-
+        >VERIFICAR</button>
+    </div>
     
 </body>
 </html>
