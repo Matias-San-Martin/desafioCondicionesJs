@@ -6,12 +6,74 @@
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script defer src="./assets/js/index.js"></script>
-    <title>Document</title>
+    <title>Parte3</title>
 </head>
 <body>
-    
+    <div class="h3">
+        <h3>INGRESA EL PASSWORD</h3>
+    </div>
+    <div>
+        <select name="selector" id="selector1">
+        <option value="1">1</option>    
+        <option value="2">2</option>    
+        <option value="3">3</option>    
+        <option value="4">4</option>    
+        <option value="5">5</option>    
+        <option value="6">6</option>    
+        <option value="7">7</option>    
+        <option value="8">8</option>    
+        <option value="9">9</option>    
+        </select>
+        <select name="selector" id="selector2">
+        <option value="1">1</option>    
+        <option value="2">2</option>    
+        <option value="3">3</option>    
+        <option value="4">4</option>    
+        <option value="5">5</option>    
+        <option value="6">6</option>    
+        <option value="7">7</option>    
+        <option value="8">8</option>    
+        <option value="9">9</option>    
+        </select>
+        <select name="selector" id="selector3">
+        <option value="1">1</option>    
+        <option value="2">2</option>    
+        <option value="3">3</option>    
+        <option value="4">4</option>    
+        <option value="5">5</option>    
+        <option value="6">6</option>    
+        <option value="7">7</option>    
+        <option value="8">8</option>    
+        <option value="9">9</option>    
+        </select>
+        
+    </div>
+    <div>
+        <button onclick="
+            const digitOne = document.querySelector('#selector1').value;
+            const digitTwo = document.querySelector('#selector2').value;
+            const digitThree = document.querySelector('#selector3').value;
+            const optionEntered = digitOne + digitTwo + digitThree;
+            console.log(optionEntered)
+            const correctOne = '911';
+            const correctTwo = '714';
 
-    <img src="" alt="">
+            if(optionEntered === correctOne) {
+                parverificadorref.innerHTML = 'Password 1 correcto'
+            }else if(optionEntered === correctTwo) {
+                parverificadorref.innerHTML = 'Password 2 correcto'
+            }else {
+                parverificadorref.innerHTML = 'Password incorrecto'
+            }
+
+            "
+        >INGRESAR</button>
+        
+        
+        
+        
+        <p id="parverificador"></p>
+    </div>
 
     
 </body>

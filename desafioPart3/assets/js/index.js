@@ -1,0 +1,1 @@
+parverificadorref = document.querySelector('#parverificador')
