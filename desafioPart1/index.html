@@ -6,19 +6,22 @@
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- <script defer src="./assets/js/index.js"></script> -->
-    <title>Document</title>
+    <title>parte1</title>
 </head>
 <body>
     
 
-    <img id="img" src="./assets/img/edmonton.jpg" alt=""
-    onclick="
-    let imgnoborder = document.querySelector('#img')
-    let redborder = imgnoborder.style.border;
-    
-    
-    "
-    >
+    <img src="" alt="">
+    <img id="img"  src="./assets/img/edmonton.jpg" alt="" 
+    style="border: none;" onclick="
+        let img = document.querySelector('#img');
+        
+        if (img.style.border ==='none') {
+            img.style.border = '2px red solid';
+        } else {
+            img.style.border = 'none';
+        }
+    ">
 
     
 </body>
